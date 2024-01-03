@@ -1,0 +1,327 @@
+/* swiper */
+
+.b_banner .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.b_banner .swiper-wrapper {
+  position: relative;
+  width: 1920px;
+  height: 580px;
+}
+
+.b_banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.b_banner .swiper-slide h2 {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.b_banner .swiper-slide span {
+  font-weight: normal;
+}
+
+.b_banner .swiper .swiper-button {
+  color: #fff;
+}
+
+.b_banner .swiper .arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 250px;
+}
+
+.b_banner .swiper .arrows .slide1_prev,
+.slide1_next {
+  color: #fff;
+  font-size: 32px;
+}
+
+/* section */
+
+.section {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  gap: 60px;
+}
+
+.section .text_box {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .text_box h2 {
+  font-size: 26px;
+  line-height: 32px;
+  padding-bottom: 14px;
+}
+
+.section .text_box a {
+  width: 110px;
+  height: 30px;
+  border: 1px solid #000;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main_event {
+  margin-top: 85px;
+}
+
+.m_banner {
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+  gap: 80px;
+}
+
+.wrap.line {
+  position: relative;
+}
+
+.wrap.line::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  height: 204px;
+  width: 100%;
+  background-color: #00bc70;
+  /* display: none; */
+}
+.banner {
+  z-index: 100;
+}
+
+.banner:hover .board {
+  color: #00bc70;
+  border: 1px solid #00bc70;
+}
+.banner:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.banner .photo {
+}
+
+.banner .photo img {
+  display: block;
+  width: 600px;
+  height: 396px;
+}
+
+.banner .board {
+  padding: 40px;
+  height: 182px;
+  position: relative;
+  background-color: #fff;
+}
+
+.banner .board p {
+  font-size: 14px;
+}
+
+.banner .board h3 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 10px;
+}
+
+.banner .board i {
+  display: block;
+  font-size: 28px;
+}
+
+.banner .board a {
+  display: block;
+  position: absolute;
+  bottom: 26%;
+  right: 6%;
+}
+
+/* link */
+
+.link {
+  width: 1280px;
+  padding-top: 190px;
+  margin: 0 auto;
+}
+
+.link_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.link_title h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.link_title a {
+  font-size: 14px;
+}
+
+.link_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container {
+  width: 413px;
+  height: 386px;
+  cursor: pointer;
+}
+
+.container:hover .flyer {
+  border: 1px solid #00bc70;
+}
+
+.container:hover .flyer_title span,
+.container:hover .flyer_title h4 {
+  color: #00bc70;
+}
+
+.container .flyer {
+  overflow: hidden;
+  width: 413px;
+  height: 272px;
+}
+.container .flyer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.container:hover .flyer img {
+  transform: scale(1.2);
+}
+
+.container .flyer_title {
+  height: 114px;
+  padding: 20px 0;
+}
+
+.flyer_title span {
+  font-size: 14px;
+  color: #666;
+}
+
+.flyer_title h4 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+.new {
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 200px;
+  height: 1000px;
+}
+
+.serum_photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.serum_photo .img1 {
+  width: 525px;
+}
+
+.serum_photo .img2 {
+  width: 350px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.serum_photo:hover .img2 {
+  left: 40%;
+}
+
+.serum_title {
+  text-align: center;
+  padding-top: 140px;
+}
+
+.serum_title h2 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+  position: relative;
+}
+
+.serum_title h2::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+}
+
+.serum_title .info {
+  padding-top: 40px;
+}
+
+.serum_title .another {
+  flex-wrap: initial;
+  justify-content: center;
+}
+
+.info .tap {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  gap: 10px;
+}
+
+.info .tap p {
+  width: 100px;
+  height: 22px;
+  border: 1px solid #00bc70;
+  line-height: 22px;
+  font-size: 12px;
+  color: #00bc70;
+  font-weight: bold;
+  border-radius: 15px;
+}

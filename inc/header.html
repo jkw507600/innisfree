@@ -1,0 +1,142 @@
+<div class="top_h">
+  <div class="top_header">
+    <div class="logo">
+      <a href=""><img src="../images/logo_innisfree.png" alt="" /></a>
+    </div>
+    <div class="search_bar">
+      <input type="text" placeholder="레티놀 앰플 ~35% + 2,000P적립" />
+      <a href="#" id="showSidebar"><i class="xi-search"></i></a>
+    </div>
+    <div class="icons">
+      <a href="#" class="login"><img src="../images/ic_login.svg" alt="" /><span>로그인</span></a>
+      <a href="#" class="mypage"><img src="../images/ic_mypage.svg" alt="" /><span>마이페이지</span></a>
+      <a href="#" class="cart"><img src="../images/ic_shopping_basket.svg" alt="" /><span>장바구니</span></a>
+    </div>
+  </div>
+</div>
+<div class="bottom_h">
+  <div class="bottom_header">
+    <div class="bars_wrap">
+      <a href="#" class="bars"><i class="xi-bars"></i><span>카테고리</span></a>
+      <div class="gnb">
+        <ul>
+          <li>
+            <a href=""> <strong>스킨케어</strong></a>
+            <ul class="sub">
+              <li><a href="">에센스</a></li>
+              <li><a href="">로션</a></li>
+              <li><a href="">스킨</a></li>
+              <li><a href="">선케어</a></li>
+              <li><a href="">클렌징</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""> <strong>메이크업</strong></a>
+            <ul class="sub">
+              <li><a href="">페이스메이크업</a></li>
+              <li><a href="">아이메이크업</a></li>
+              <li><a href="">립메이크업</a></li>
+              <li><a href="">네일</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""> <strong>남성</strong></a>
+            <ul class="sub">
+              <li><a href="">스킨케어</a></li>
+              <li><a href="">클렌징</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""> <strong>헤어/바디/펫</strong></a>
+            <ul class="sub">
+              <li><a href="">펫</a></li>
+              <li><a href="">핸드</a></li>
+              <li><a href="">바디로션</a></li>
+              <li><a href="">바디워시</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""> <strong>기획세트</strong></a>
+            <ul class="sub">
+              <li><a href="">기획세트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""> <strong>미용소품</strong></a>
+            <ul class="sub">
+              <li><a href="">브러쉬</a></li>
+              <li><a href="">네일소품</a></li>
+              <li><a href="">헤어소품</a></li>
+              <li><a href="">퍼프</a></li>
+              <li><a href="">화장솜</a></li>
+              <li><a href="">클렌징소품</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="event">
+      <li><a href="#">특가</a></li>
+      <li><a href="#">이벤트</a></li>
+      <li><a href="#">베스트</a></li>
+      <li><a href="#">쇼케이스</a></li>
+      <li><a href="#">라이브</a></li>
+      <li><a href="#">FOR ME</a></li>
+    </ul>
+    <div class="about">
+      <h4>ABOUT</h4>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    $('.logo > a').attr('href', '../pages/main.html')
+    $('.login').attr('href', '../pages/login.html')
+  })
+</script>
+
+<script>
+  $(function () {
+    $('.bars_wrap').hover(
+      function () {
+        $('.bottom_h').addClass('active')
+        $('.bars').addClass('on')
+        $('.gnb').show()
+      },
+      function () {
+        console.log('b')
+        $('.bars').removeClass('on')
+        $('.gnb').hide()
+        $('.bottom_h').removeClass('active')
+      }
+    )
+  })
+</script>
+<script>
+  $(window).scroll(function () {
+    var scrollValue = $('.bottom_h').offset().top
+
+    if ($(this).scrollTop() > 108) {
+      $('.bottom_h').addClass('fixed')
+    } else {
+      $('.bottom_h').removeClass('fixed')
+    }
+  })
+</script>
+
+<script>
+  //search box 열기
+  $('.search_bar').click(function () {
+    $('.dimm').show()
+    $('.search_box.box1').animate({ right: 0 }, 300)
+  })
+</script>
+
+<script>
+  //shopping cart 열기
+  $('.icons > a.cart').click(function () {
+    $('.dimm').show()
+    $('.search_box.box2').animate({ right: 0 }, 300)
+  })
+</script>

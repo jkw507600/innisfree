@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>innisfree</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/detail.css" />
+  <link rel="stylesheet" href="../css/small_slider.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container_d">
+      <div class="header">
+        <!-- header include -->
+      </div>
+      <div class="category">
+        <div class="depth">
+          <a href="#"><i class="xi-home"></i></a>
+        </div>
+        <div class="depth">
+          <a href="#">카테고리</a>
+          <ul>
+            <li><a href="">카테고리</a></li>
+            <li><a href="">특가</a></li>
+            <li><a href="">이벤트</a></li>
+            <li><a href="">베스트</a></li>
+            <li><a href="">쇼케이스</a></li>
+            <li><a href="">라이브</a></li>
+            <li><a href="">FOR ME</a></li>
+            <li><a href="">ABOUT</a></li>
+          </ul>
+        </div>
+        <div class="depth">
+          <a href="#">스킨케어</a>
+          <ul>
+            <li><a href="">스킨케어</a></li>
+            <li><a href="">메이크업</a></li>
+            <li><a href="">남성</a></li>
+            <li><a href="">헤어/바디/펫</a></li>
+            <li><a href="">기획 세트</a></li>
+            <li><a href="">미용소품</a></li>
+          </ul>
+        </div>
+        <div class="depth">
+          <a href="#">전체</a>
+          <ul>
+            <li><a href="">에센스</a></li>
+            <li><a href="">로션</a></li>
+            <li><a href="">스킨</a></li>
+            <li><a href="">선케어</a></li>
+            <li><a href="">클렌징</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- section -->
+    <div class="section">
+      <div class="side">
+        <div class="text">
+          <h2>스킨케어</h2>
+          <ul class="list">
+            <li><a href="">에센스</a></li>
+            <li><a href="">로션</a></li>
+            <li><a href="">스킨</a></li>
+            <li><a href="">선케어</a></li>
+            <li><a href="">클렌징</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div class="lists_head">
+          <h1>스킨케어</h1>
+          <div class="side_btn">
+            <a href="#" class="rec">추천순 <img src="../images/arr_location_black.png" alt="" /></a>
+            <ul>
+              <li class="active"><a href="#">추천순</a></li>
+              <li><a href="#">신제품순</a></li>
+              <li><a href="#">판매량순</a></li>
+              <li><a href="#">낮은가격순</a></li>
+              <li><a href="#">높은가격순</a></li>
+              <li><a href="#">리뷰순</a></li>
+            </ul>
+            <a href="#">상세 검색 <img src="../images/ico_filter16.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="swiper-wrapper items">
+          <div class="pages"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+
+  <script>
+    var itemdata = [
+      {
+        img_01: '../images/item-1-1.png',
+        img_02: '../images/item-1-1-a.jpg',
+        title: '레티놀 시카 흔적 앰플',
+        price: '30,000',
+        sale: '25%',
+        cost: '40,000',
+      },
+      {
+        img_01: '../images/item-1-3.png',
+        img_02: '../images/item-1-3-a.jpg',
+        title: '레티놀앰플&나이스웨더 유틸리티 백스페셜 세트',
+        price: '34,450',
+        sale: '35%',
+        cost: '53,000',
+      },
+      {
+        img_01: '../images/item-2-7.png',
+        img_02: '../images/item-2-7-a.jpg',
+        title: '블랙티 유스 인핸싱 앰플 [대용량]',
+        price: '36,400',
+        sale: '35%',
+        cost: '56,000',
+      },
+      {
+        img_01: '../images/item-2-8.png',
+        img_02: '../images/item-2-8-a.jpg',
+        title: '비타C 그린티 엔자임 잡티 토닝 세럼 [대용량]',
+        price: '39,200',
+        sale: '30%',
+        cost: '56,000',
+      },
+      {
+        img_01: '../images/item-1-2.png',
+        img_02: '../images/item-1-1-a.jpg',
+        title: '레티놀 시카 흔적 앰플 [대용량]',
+        price: '39,900',
+        sale: '30%',
+        cost: '57,000',
+      },
+      {
+        img_01: '../images/item-2-9.png',
+        img_02: '../images/item-2-9-a.jpg',
+        title: '그린티 씨드 히알루론산 세럼',
+        price: '21,700',
+        sale: '30%',
+        cost: '31,000',
+      },
+      {
+        img_01: '../images/item-2-1.png',
+        img_02: '../images/item-2-1.png',
+        title: '콜라겐 그린티 세라마이드 탄력 장벽 크림',
+        price: '28,470',
+        sale: '27%',
+        cost: '39,000',
+      },
+      {
+        img_01: '../images/item-2-5.png',
+        img_02: '../images/item-2-5.png',
+        title: '블랙티 앰플[대용량] 50mL + 블랙티 크림 50mL',
+        price: '46,800',
+        sale: '35%',
+        cost: '72,000',
+      },
+      {
+        img_01: '../images/item-3-1.png',
+        img_02: '../images/item-3-1.png',
+        title: '블랙티 유스 인핸싱 크림 50mL 2개',
+        price: '0',
+        sale: '0',
+        cost: '0',
+      },
+      {
+        img_01: '../images/item-3-2.png',
+        img_02: '../images/item-3-2.png',
+        title: '블랙티 유스 인핸싱 앰플[대용량] 50mL 2개',
+        price: '0',
+        sale: '0',
+        cost: '0',
+      },
+      {
+        img_01: '../images/item-3-3.png',
+        img_02: '../images/item-3-3.png',
+        title: '블랙티 유스 인핸싱 앰플 30mL 2개',
+        price: '0',
+        sale: '0',
+        cost: '0',
+      },
+      {
+        img_01: '../images/item-3-4.png',
+        img_02: '../images/item-3-4.png',
+        title: '비타C 그린티 엔자임 잡티 토닝 세럼 체험단',
+        price: '0',
+        sale: '0',
+        cost: '0',
+      },
+    ]
+
+    $(function () {
+      $('.header').load('../inc/header.html')
+
+      // 상품리스트 반복
+      var list = $('.items')
+
+      $(itemdata).each(function (index, item) {
+        // console.log(item.title);
+        var row = ` <div class="swiper-slide item_d">
+                            <a href="#" class="img">
+                                <div class="photoBox">
+                                    <img src="${item.img_01}" alt="" class="image_box">
+                                    <img src="${item.img_02}" alt="" class="overFlip">
+                                </div>
+                                <div class="iconBox">
+                                    <div class="icon"><i class="xi-heart-o"></i></div>
+                                    <div class="icon"><i class="xi-cart-o"></i></div>
+                                    <div class="icon"><i class="xi-credit-card"></i></div>
+                                </div>
+                            </a>
+                            <div class="info">
+                                <a href="">
+                                    <div class="name"><strong>BEST</strong> ${item.title}</div>
+                                    <div class="priceBox">
+                                        <strong class="price">${item.price}</strong>
+                                        <div class="sale">${item.sale}</div>
+                                        <div class="cost">${item.cost}</div>
+                                    </div>
+                                    <div class="sticker">증정</div>
+                                    <div class="star">4.9 (8,495)</div>
+                                </a>
+                            </div>
+                        </div>`
+        list.append(row)
+      })
+    })
+  </script>
+
+  <script>
+    var dep = $('.depth')
+
+    dep.hover(
+      function () {
+        $(this).find('ul').stop().slideDown()
+      },
+      function () {
+        $(this).find('ul').hide()
+      }
+    )
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.side_btn .rec').click(function () {
+        $('.side_btn > ul').slideToggle('fast')
+      })
+    })
+  </script>
+  <script>
+    var btn = $('.side_btn > ul > li')
+
+    btn.on('click', function () {
+      btn.removeClass('active')
+      $(this).addClass('active')
+    })
+  </script>
+</body>
+
+</html>

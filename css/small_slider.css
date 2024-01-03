@@ -1,0 +1,173 @@
+/* section */
+.section .small_slider {
+  width: 1020px;
+}
+
+.mySwiper_2 .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  top: initial;
+  bottom: 0;
+}
+
+.mySwiper_3 .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  top: initial;
+  bottom: 0;
+}
+
+.section .arrows {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+}
+
+.mySwiper_2 .swiper-slide {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.mySwiper_3 .swiper-slide {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.swiper-slide .img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.swiper-wrapper .iconBox .icon {
+  font-size: 28px;
+  display: flex;
+}
+
+.swiper-wrapper .iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00bc70;
+  width: 240px;
+  height: 60px;
+  padding: 0 24px;
+  position: absolute;
+  bottom: -60px;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.swiper-slide .img:hover .iconBox {
+  bottom: 0;
+}
+
+.swiper-slide img:hover .image_box::after {
+  bottom: 60px;
+}
+
+.image_box {
+}
+
+.iconBox .icon i {
+  display: block;
+  width: 100%;
+}
+
+.photoBox {
+  width: 240px;
+  height: 320px;
+  position: relative;
+}
+
+.photoBox img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.photoBox img.overFlip {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.photoBox:hover img.image_box {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.photoBox:hover img.overFlip {
+  opacity: 1;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 14px;
+  color: #666;
+}
+
+.priceBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.priceBox > div {
+  margin-left: 10px;
+}
+
+.priceBox .price {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.priceBox .sale {
+  font-size: 20px;
+  line-height: 1.2;
+  color: red;
+}
+.priceBox .cost {
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration-line: line-through;
+  color: #999;
+}
+
+.sticker {
+  width: 28px;
+  height: 20px;
+  background-color: #e0fbf0;
+  color: #2dc58a;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.star {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #999;
+}
+
+.star::before {
+  display: block;
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  background: url(../images/ico_star.png) no-repeat 50% 50%;
+}
