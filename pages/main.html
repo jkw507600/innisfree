@@ -213,7 +213,9 @@
     </div>
   </div>
   <div class="wrap">
-    <div class="footer"></div>
+    <div class="footer">
+      <!-- footer -->
+    </div>
     <div class="floatingMenu">
       <a href="#x" class="go_top"></a>
     </div>
@@ -306,6 +308,9 @@
 <script>
   $(function () {
     var swiper = new Swiper('.slide1', {
+      autoplay: {
+        delay: 3000,
+      },
       pagination: {
         el: '.swiper-pagination',
         type: 'fraction',

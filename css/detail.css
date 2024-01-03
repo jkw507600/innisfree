@@ -1,15 +1,21 @@
-.container_d {
+/* .container_d {
   width: 1280px;
   margin: 0 auto;
+} */
+
+.category {
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 2px solid #888;
 }
 
-.container_d .category {
+.category .inner_category{
   display: flex;
+  align-items: center;
   height: 60px;
   line-height: 60px;
   width: 1280px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 2px solid #888;
+  margin: 0 auto;
 }
 
 .category .depth {
@@ -39,9 +45,10 @@
   padding: 0 13px;
 }
 
-/* .category .depth > a.active .depth > ul {
-  display: block;
-} */
+
+.category .depth > .mainHome::after {
+  content: none;
+}
 
 .category .depth > a::after {
   padding-left: 5px;
@@ -54,13 +61,9 @@
   background-position: center;
 }
 
-.category .depth > a:nth-child(1)::after {
-  /* display: none; */
-}
-
-.category .depth:nth-child(4) {
-  /* color: #333; */
-}
+/* .category .depth > a:after:nth-child(1) {
+  content: none;
+} */
 
 .category .depth > ul {
   background-color: #fff;
@@ -95,9 +98,14 @@
   display: flex;
   width: 1280px;
   margin: 0 auto;
+  min-height: 500px;
+  padding-bottom: 300px;
 }
 
 .section .side {
+  position: sticky;
+  top: 120px;
+  height: 100%;
   width: 200px;
   margin: 60px 60px 0 0;
 }
@@ -109,6 +117,7 @@
   font-size: 18px;
   color: #333;
   padding-bottom: 46px;
+  padding-top: 16px;
 }
 
 .side .text .list {
@@ -131,7 +140,7 @@
 
 .lists_head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 60px 0;
 }
@@ -140,11 +149,11 @@
   line-height: 1.2;
   font-weight: normal;
 }
-.lists_head .side_btn {
+.lists_head .side_icon {
   display: flex;
   position: relative;
 }
-.lists_head .side_btn > a {
+.lists_head .side_icon  > a {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -154,14 +163,14 @@
   /* background-color: yellow; */
 }
 
-.lists_head .side_btn img {
+.lists_head .side_icon img {
   display: block;
   margin-left: 10px;
   /* width: 16px;
     height: 16px; */
 }
 
-.lists_head .side_btn > ul {
+.lists_head .side_icon  > ul {
   position: absolute;
   top: 45px;
   left: 0px;
@@ -172,12 +181,12 @@
   display: none;
 }
 
-.lists_head .side_btn > ul > li {
+.lists_head .side_icon  > ul > li {
   padding: 10px 15px;
   height: 40px;
   width: 144px;
 }
-.lists_head .side_btn > ul > li > a {
+.lists_head .side_icon  > ul > li > a {
   display: block;
   font-size: 14px;
   font-weight: normal;
@@ -185,12 +194,12 @@
   padding: 0;
 }
 
-.lists_head .side_btn > ul > li.active > a {
+.lists_head .side_icon  > ul > li.active > a {
   color: #00bc70;
   font-weight: bold;
 }
 
-.lists_head .side_btn > a:nth-child(1)::after {
+.lists_head .side_icon > a:nth-child(1)::after {
   content: '';
   width: 2px;
   height: 12px;

@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mypage</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/detail.css" /> -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -14,8 +19,67 @@
         <div class="header">
             <!-- header -->
         </div>
+        <div class="category">
+            <div class="inner_category">
+                <div class="depth">
+                    <a href="#" class="mainHome"><i class="xi-home"></i></a>
+                </div>
+                <div class="depth">
+                    <a href="#">마이페이지</a>
+                    <ul>
+                        <li><a href="./detail.html">카테고리</a></li>
+                        <li><a href="">특가</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">베스트</a></li>
+                        <li><a href="">쇼케이스</a></li>
+                        <li><a href="">라이브</a></li>
+                        <li><a href="">FOR ME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">마이페이지</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="login_contents">
+                <div class="title_big">
+                    <h2>로그인을 해주세요.</h2>
+                </div>
+                <div class="title_small">
+                    <p>주문 및 다양한 혜택 정보를 확인할 수 있습니다.</p>
+                </div>
+                <div class="button_two">
+                    <a href="./login.html"><button class="btnGr">로그인</button></a>
+                    <button class="btnBl">회원 가입하고 혜택 받기</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- footer -->
+        </div>
     </div>
 
 </body>
+
+<script>
+    $(function () {
+        $('.footer').load('../inc/footer.html')
+        $('.header').load('../inc/header.html')
+    })
+</script>
+
+<script>
+    var dep = $('.depth')
+
+    dep.hover(
+        function () {
+            $(this).find('ul').stop().slideDown()
+        },
+        function () {
+            $(this).find('ul').hide()
+        }
+    )
+</script>
+
 
 </html>

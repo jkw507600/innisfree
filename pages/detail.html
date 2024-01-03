@@ -27,42 +27,45 @@
         <!-- header include -->
       </div>
       <div class="category">
-        <div class="depth">
-          <a href="#"><i class="xi-home"></i></a>
-        </div>
-        <div class="depth">
-          <a href="#">카테고리</a>
-          <ul>
-            <li><a href="">카테고리</a></li>
-            <li><a href="">특가</a></li>
-            <li><a href="">이벤트</a></li>
-            <li><a href="">베스트</a></li>
-            <li><a href="">쇼케이스</a></li>
-            <li><a href="">라이브</a></li>
-            <li><a href="">FOR ME</a></li>
-            <li><a href="">ABOUT</a></li>
-          </ul>
-        </div>
-        <div class="depth">
-          <a href="#">스킨케어</a>
-          <ul>
-            <li><a href="">스킨케어</a></li>
-            <li><a href="">메이크업</a></li>
-            <li><a href="">남성</a></li>
-            <li><a href="">헤어/바디/펫</a></li>
-            <li><a href="">기획 세트</a></li>
-            <li><a href="">미용소품</a></li>
-          </ul>
-        </div>
-        <div class="depth">
-          <a href="#">전체</a>
-          <ul>
-            <li><a href="">에센스</a></li>
-            <li><a href="">로션</a></li>
-            <li><a href="">스킨</a></li>
-            <li><a href="">선케어</a></li>
-            <li><a href="">클렌징</a></li>
-          </ul>
+        <div class="inner_category">
+          <div class="depth">
+            <a href="#" class="mainHome"><i class="xi-home"></i></a>
+          </div>
+          <div class="depth">
+            <a href="#">카테고리</a>
+            <ul>
+              <li><a href="">카테고리</a></li>
+              <li><a href="">특가</a></li>
+              <li><a href="">이벤트</a></li>
+              <li><a href="">베스트</a></li>
+              <li><a href="">쇼케이스</a></li>
+              <li><a href="">라이브</a></li>
+              <li><a href="">FOR ME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">마이페이지</a></li>
+            </ul>
+          </div>
+          <div class="depth">
+            <a href="#">스킨케어</a>
+            <ul>
+              <li><a href="">스킨케어</a></li>
+              <li><a href="">메이크업</a></li>
+              <li><a href="">남성</a></li>
+              <li><a href="">헤어/바디/펫</a></li>
+              <li><a href="">기획 세트</a></li>
+              <li><a href="">미용소품</a></li>
+            </ul>
+          </div>
+          <div class="depth">
+            <a href="#">전체</a>
+            <ul>
+              <li><a href="">에센스</a></li>
+              <li><a href="">로션</a></li>
+              <li><a href="">스킨</a></li>
+              <li><a href="">선케어</a></li>
+              <li><a href="">클렌징</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -83,7 +86,7 @@
       <div class="main">
         <div class="lists_head">
           <h1>스킨케어</h1>
-          <div class="side_btn">
+          <div class="side_icon">
             <a href="#" class="rec">추천순 <img src="../images/arr_location_black.png" alt="" /></a>
             <ul>
               <li class="active"><a href="#">추천순</a></li>
@@ -206,6 +209,7 @@
 
     $(function () {
       $('.header').load('../inc/header.html')
+      $('.footer').load('../inc/footer.html')
 
       // 상품리스트 반복
       var list = $('.items')
@@ -254,6 +258,7 @@
       }
     )
   </script>
+
   <script>
     $(document).ready(function () {
       $('.side_btn .rec').click(function () {
@@ -261,6 +266,7 @@
       })
     })
   </script>
+
   <script>
     var btn = $('.side_btn > ul > li')
 
