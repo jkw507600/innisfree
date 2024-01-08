@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>event</title>
+    <link rel="stylesheet" href="../css/event.css">
+    <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="stylesheet" href="../css/small_slider.css">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -63,7 +78,7 @@
                             class="swiper mySwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="../images/item-1-1.png" />
+                                    <img src="../images/innisfree item.jpg" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="../images/event01.jpg" />
@@ -74,14 +89,13 @@
                                 <div class="swiper-slide">
                                     <img src="../images/event03.jpg" />
                                 </div>
+
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
                         </div>
                         <div thumbsSlider="" class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="../images/item-1-1.png" />
+                                    <img src="../images/innisfree item.jpg" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="../images/event01.jpg" />
@@ -91,6 +105,10 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="../images/event03.jpg" />
+                                </div>
+                                <div class="arrows">
+                                    <div class="arrow left"><i class="xi-angle-left"></i></div>
+                                    <div class="arrow right"><i class="xi-angle-right"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -128,17 +146,24 @@
                             </div>
                         </div>
                         <div class="v_Qty">
-                            <div class="count">1</div>
+                            <div class="count">
+                                <div class="countArea">
+                                    <button class="buttonS"><i class="xi-minus"></i></button>
+                                    <input type="text" value="1" class="pdtQty">
+                                    <button class="buttonS"><i class="xi-plus"></i></button>
+                                </div>
+                            </div>
                             <div class="smallprice">30,000 원</div>
                         </div>
-                        <div class="v_total">합계
+                        <div class="v_total">
+                            <p>합계</p>
                             <div class="total_price">30,000 원</div>
                         </div>
-                        <div class="v_btnwrap">
-                            <div class="small_btn"><img src="../images/ico_share_white.png" alt=""></div>
-                            <div class="small_btn"><img src="../images/ico_heart32_white.png" alt=""></div>
-                            <div class="big_btn">장바구니</div>
-                            <div class="big_btn">바로구매</div>
+                        <div class="v_wrap">
+                            <div class="buttonS"><img src="../images/ico_share_white.png" alt=""></div>
+                            <div class="buttonS"><img src="../images/ico_heart32_white.png" alt=""></div>
+                            <div class="buttonB one">장바구니</div>
+                            <div class="buttonB two">바로구매</div>
                         </div>
                     </div>
                 </div>
@@ -154,10 +179,45 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
 </body>
+
+<script>
+    $(function () {
+        $('.footer').load('../inc/footer.html')
+        $('.header').load('../inc/header.html')
+    })
+</script>
+<script>
+    var dep = $('.depth')
+
+    dep.hover(
+        function () {
+            $(this).find('ul').stop().slideDown()
+        },
+        function () {
+            $(this).find('ul').hide()
+        }
+    )
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 4,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: ".arrow.next",
+            prevEl: ".arrow.left",
+        },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>
 
 </html>

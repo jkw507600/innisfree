@@ -1,0 +1,204 @@
+.main_view {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: 0 auto;
+}
+.view {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 60px auto;
+}
+
+.view .swiper {
+    width: 500px;
+    height: 667px;
+}
+
+.view .mySwiper2 .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 500px;
+}
+
+.view .mySwiper2 {
+    width: 500px;
+    height: 667px;
+}
+
+.view .mySwiper {
+    position: relative;
+    width: 340px;
+    margin: 30px auto;
+    height: 109px;
+}
+
+.view .mySwiper .swiper-wrapper .swiper-slide {
+    width: initial!important;
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper .swiper-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.mySwiper .swiper-slide {
+    width: 82px;
+    margin-right: 5px;
+}
+
+.mySwiper .swiper-slide img {
+    display: block;
+    width: 82px;
+    height: 109px;
+    object-fit: cover;
+}
+
+.mySwiper .arrows {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+    z-index: 10000;
+}
+
+
+
+.view_box {
+    width: 680px;
+}
+
+.view_box .sticker{
+    margin-top: initial;
+    margin-bottom: 32px;
+}
+
+.view_box .name{
+    font-size: 40px;
+    line-height: 40px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.priceboxWrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.priceboxWrap .priceBox .price {
+    font-size: 28px;
+}
+
+.priceboxWrap .priceBox .cost {
+    font-size: 20px;
+}
+.view_box .sticker{}
+
+.v_ship {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+.v_ship .b {
+    display: flex;
+
+}
+
+.v_ship .b span {
+    font-size: 12px;
+    color: #888;
+    width: 100px;
+    margin-right: 20px ;
+}
+
+.v_ship .b p {
+    font-size: 12px;
+    color: #222;
+}
+
+.v_Qty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.countArea [class*="buttonS"] {width:45px;height:38px;border:none;padding:12px 15px;background:#fff;}
+.countArea [class*="pdtQty"] {width:24px;height:20px;border:none;font-weight:600;font-size:16px;text-align:center;color:#000;}
+
+.countArea {}
+
+.v_Qty .count {
+    border: 1px solid #D9D9D9;
+}
+
+.count .pdtQty {
+    width: 90px;
+}
+
+.v_total {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.v_total p {
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.v_total .total_price {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #00BC70;
+}
+
+.v_wrap {
+    display: flex;
+    gap: 0;
+    margin-top: 30px;
+}
+
+.v_wrap .buttonS {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+}
+
+.v_wrap .buttonS img {
+    display: block;
+
+}
+
+.v_wrap .buttonB {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 60px;
+    color: #fff;
+    background-color: #222;
+}
+
+.v_wrap .buttonB.two {
+    background-color: #00BC70;
+}
+
