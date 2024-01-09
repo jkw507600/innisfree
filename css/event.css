@@ -11,6 +11,11 @@
     margin: 60px auto;
 }
 
+.view_area {
+    position: relative;
+    /* background-color: yellow; */
+}
+
 .view .swiper {
     width: 500px;
     height: 667px;
@@ -24,13 +29,16 @@
 .view .mySwiper2 {
     width: 500px;
     height: 667px;
+    position: relative;
+    /* padding-bottom: 500px; */
 }
 
 .view .mySwiper {
-    position: relative;
-    width: 340px;
+    width: 430px;
     margin: 30px auto;
     height: 109px;
+    position: relative;
+    /* padding: 30px; */
 }
 
 .view .mySwiper .swiper-wrapper .swiper-slide {
@@ -41,7 +49,6 @@
 
 .mySwiper .swiper-wrapper {
     width: 100%;
-    position: relative;
 }
 
 .mySwiper .swiper-slide {
@@ -55,20 +62,6 @@
     height: 109px;
     object-fit: cover;
 }
-
-.mySwiper .arrows {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: red;
-    z-index: 10000;
-}
-
-
 
 .view_box {
     width: 680px;
@@ -202,3 +195,385 @@
     background-color: #00BC70;
 }
 
+.v_info{
+    margin: 30px 35px 0;
+}
+
+.v_info h3{
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.v_info .texts_two{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #888;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.v_info .texts_two .one{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.detailwrap {
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+
+}
+.detailwrap h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.detailwrap .det_box {
+    display: flex;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.detailwrap .det_box .round_box{
+    font-size: 12px;
+    font-weight: bold;
+    color: #00BC70;
+    border: 1px solid #00BC70;
+    border-radius: 15px;
+    padding: 2px 6px;
+}
+
+.tab_wrap{}
+.tab4{}
+.item4{
+    display: flex;
+    width: 1280px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.item4 li {
+    flex: 1;
+}
+.item4 li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    color: #666;
+}
+.item4 li.active button {
+    color: #000;
+    border-bottom: 3px solid #000;
+}
+.tabContents {
+    width: 1280px;
+    margin: 0 auto;
+}
+.tabPhoto {
+    padding: 60px 0;
+}
+
+.tabPhoto img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviewList {
+    padding: 60px 0;
+}
+.review_wrap {}
+.reviewTitle {
+    border: 1px solid #eee;
+}
+.reviewTitle .titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 64px;
+}
+.reviewTitle .titles .T_1 {
+    padding-right: 40px;
+    border-right: 1px solid #eee;
+    
+}
+.reviewTitle .titles .T_1 .stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reviewTitle .titles .T_1 .stars span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.reviewTitle .titles .T_2 {
+    flex: 1;
+}
+.reviewTitle .titles .T_2 .middle_text {
+    text-align: center;
+
+}
+.reviewTitle .titles .T_2 .middle_text span{
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.reviewTitle .titles .T_3 {
+    padding-left: 40px;
+    border-left: 1px solid #eee;
+}
+.reviewTitle .titles .T_3 span{
+    font-size: 24px;
+}
+.graphWrap {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-top: none;
+}
+.graphWrap .grap {
+    width: 50%;
+    padding: 39px 59px;
+}
+
+.graphWrap .grap.left {
+    border-right: 1px solid #eee;
+}
+
+.graphWrap .grap .texts {
+    display: flex;
+}
+
+.graphWrap .grap > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.graphWrap .grap .texts h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.graphWrap .grap .texts p {
+    font-size: 14px;
+    color: #888;
+    margin-left: 10px;
+}
+
+.graphWrap .grap > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.graphWrap .grap.left .grade {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.graphWrap .grap.right .grade {
+    font-size: 13px;
+    color: #999;
+}
+
+.graphWrap .grap .barGraphBase {
+    display: block;
+    flex: 1;
+    height: 5px;
+    background-color: #eee;
+}
+
+.grap li .barGraph {
+    background-color: #00BC70;
+    display: block;
+    height: 5px;
+}
+
+.grap.left .g1 .barGraph {
+    width: 78%;
+}
+.grap.left .g2 .barGraph {
+    width: 12%;
+}
+.grap.left .g3 .barGraph {
+    width: 5%;
+}
+.grap.left .g4 .barGraph {
+    width: 3%;
+}
+.grap.left .g5 .barGraph {
+    width: 2%;
+}
+
+.grap.left .len {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #333;
+    width: 40px;
+}
+
+.grap.right .len {
+    font-size: 12px;
+    color: #333;
+}
+
+.graphWrap .grap.right li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.graphWrap .grap.right .barGraphBase {
+    width: 100%;
+    height: 5px;
+    background-color: #eee;
+    margin-top: 5px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.grap.right .g1 .barGraph {
+    width: 50%;
+}
+.grap.right .g2 .barGraph {
+    width: 43%;
+}
+.grap.right .g3 .barGraph {
+    width: 38%;
+}
+.grap.right .g4 .barGraph {
+    width: 32%;
+}
+.grap.right .g5 .barGraph {
+    width: 22%;
+}
+
+.reviewOpt {
+    margin-top: 60px;
+}
+.reviewOpt .option{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+    border-bottom: 1px solid #eee;
+}
+.reviewOpt .option .opt {
+}
+
+.reviewOpt .option .opt ul {
+    display: flex;
+    align-items: center;
+}
+
+.option .opt ul a {
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+}
+
+.option .opt ul li {
+    display: flex;
+    align-items: center;
+}
+.option .opt ul li::before {
+    flex: none;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 10px;
+    margin: 0 30px;
+    background-color: #eee;
+}
+
+.option .opt ul li:first-child::before {
+    content: none;
+}
+
+.option .opt.front ul li a.on {
+    font-weight: bold;
+    color: #000;
+}
+
+.reviewPageList {}
+.reviewPageList ul {}
+
+.userIntro {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+.userIntro .user {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.userIntro .user > div {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+.userIntro .user > div::before {
+    flex: none;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+    background-color: #eee;
+}
+
+.userIntro .user > div:first-child:before {
+    content: none;
+}
+
+.userIntro .user .name {
+    font-weight: bold;
+    color: #000;
+}
+.userIntro .user .age {}
+.userIntro .user .sex {}
+.userIntro .user .starWrap {}
+.userIntro .user .date {}
+
+.reviewCnt {
+    margin: 54px 0;
+}
+
+.reviewCnt p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.paging{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.paging span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #999;
+    padding: 8px 6px;
+}
+
+.paging .num.on {
+    color: #222;
+    font-weight: bold;
+    border-bottom: 3px solid #00BC70;
+}
