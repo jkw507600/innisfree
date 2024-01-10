@@ -162,9 +162,9 @@
                         </div>
                         <div class="v_wrap">
                             <div class="buttonS"><img src="../images/ico_share_white.png" alt=""></div>
-                            <div class="buttonS"><img src="../images/ico_heart32_white.png" alt=""></div>
-                            <div class="buttonB one">장바구니</div>
-                            <div class="buttonB two">바로구매</div>
+                            <div class="buttonS alert"><img src="../images/ico_heart32_white.png" alt=""></div>
+                            <div class="buttonB one alert">장바구니</div>
+                            <div class="buttonB two alert">바로구매</div>
                         </div>
                     </div>
                 </div>
@@ -421,11 +421,13 @@
     });
 </script>
 <script>
-    //shopping cart 열기
-    $('.icons > a.cart').click(function () {
-        $('.dimm').show()
-        $('.search_box.box2').animate({ right: 0 }, 300)
-    })
+    $(".buttonS.alert").click(function () {
+        alert("로그인 후 이용해주세요");
+    });
+
+    $(".buttonB").click(function () {
+        alert("로그인 후 이용해주세요");
+    });
 </script>
 
 </html>

@@ -34,36 +34,36 @@
           <div class="depth">
             <a href="#">카테고리</a>
             <ul>
-              <li><a href="">카테고리</a></li>
-              <li><a href="">특가</a></li>
-              <li><a href="">이벤트</a></li>
-              <li><a href="">베스트</a></li>
-              <li><a href="">쇼케이스</a></li>
-              <li><a href="">라이브</a></li>
-              <li><a href="">FOR ME</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">마이페이지</a></li>
+              <li><a href="#">카테고리</a></li>
+              <li><a href="#">특가</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">베스트</a></li>
+              <li><a href="#">쇼케이스</a></li>
+              <li><a href="#">라이브</a></li>
+              <li><a href="#">FOR ME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">마이페이지</a></li>
             </ul>
           </div>
           <div class="depth">
             <a href="#">스킨케어</a>
             <ul>
-              <li><a href="">스킨케어</a></li>
-              <li><a href="">메이크업</a></li>
-              <li><a href="">남성</a></li>
-              <li><a href="">헤어/바디/펫</a></li>
-              <li><a href="">기획 세트</a></li>
-              <li><a href="">미용소품</a></li>
+              <li><a href="#">스킨케어</a></li>
+              <li><a href="#">메이크업</a></li>
+              <li><a href="#">남성</a></li>
+              <li><a href="#">헤어/바디/펫</a></li>
+              <li><a href="#">기획 세트</a></li>
+              <li><a href="#">미용소품</a></li>
             </ul>
           </div>
           <div class="depth">
             <a href="#">전체</a>
             <ul>
-              <li><a href="">에센스</a></li>
-              <li><a href="">로션</a></li>
-              <li><a href="">스킨</a></li>
-              <li><a href="">선케어</a></li>
-              <li><a href="">클렌징</a></li>
+              <li><a href="#">에센스</a></li>
+              <li><a href="#">로션</a></li>
+              <li><a href="#">스킨</a></li>
+              <li><a href="#">선케어</a></li>
+              <li><a href="#">클렌징</a></li>
             </ul>
           </div>
         </div>
@@ -249,6 +249,11 @@
   <script>
     $(function () {
       $('.swiper-slide > a').attr('href', '../pages/event.html')
+
+      var detailPage = $('.inner_category .depth > ul > li > a')
+
+      $(detailPage).attr('href', '../pages/detail.html')
+
     })
   </script>
 
@@ -282,6 +287,9 @@
       $(this).addClass('active')
     })
   </script>
+
+
+
 </body>
 
 </html>
