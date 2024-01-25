@@ -34,7 +34,7 @@
 
 - **`jQuery`**
 
-- **`Slick Carousel`**
+- **`Swiper`**
 
 - **`ScrollReveal`**
 
