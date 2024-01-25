@@ -14,12 +14,15 @@
      - 사용된 언어 및 이벤트
 
 4. 주요 기능
-     - <a id="content3" href="#list_1">카드 신청시 모달 이벤트</a>
+     - <a id="content3" href="#list_1">드롭다운 메뉴 이벤트</a>
      - <a href="#list_2">반복되는 inc 콘텐츠 로딩</a>
-     - <a href="#list_3">카드 이미지의 움직임을 스크롤 이벤트 처리</a>
-     - <a href="#list_4">카드 선택 Swiper 슬라이더 활용</a>
-     - <a href="#list_5">메인 배너 slick 슬라이더 활용</a>
-     - <a href="#list_6">다음 페이지 링크 업데이트 스크립트</a>
+     - <a href="#list_3">로그인 알림 이벤트</a>
+     - <a href="#list_4">아이템 리스트 Swiper 슬라이더 활용</a>
+     - <a href="#list_5">itemdata 배열의 각 제품에 대한 반복문</a>
+     - <a href="#list_6">토글 버튼</a>
+     - <a href="#list_7">로고 및 아이콘 링크 설정</a>
+     - <a href="#list_8">스크롤 이벤트로 헤더 고정</a>
+     - <a href="#list_9">애니메이션 효과 및 검색창 열고 닫기</a>
 
 ## :bulb: 사용 기술
 
