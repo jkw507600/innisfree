@@ -70,10 +70,44 @@
 ![image](https://github.com/jkw507600/innisfree/assets/145305173/e9f09a64-0c94-4978-98c7-3e5ef5d37915)
 
 - - -
-### - <a id="list_5"> 상품 데이터 생성</a>
+### - <a id="list_5"> itemdata 배열의 각 제품에 대한 반복문</a>
 
- >	Slick 라이브러리를 사용하여 간단한 슬라이더를 구현했습니다. <br>  다양한 옵션을 추가하여 슬라이더를 구현하였습니다.
+>	각 제품의 이미지, 제목, 가격과 할인율의 정보를 객체로 구성하여 Each 함수를 사용해 itemdata 배열의 각 제품에 대해 반복합니다.
 
-![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/c9344b7f-28e7-4828-91c2-8f94c8df4505)
+![image](https://github.com/jkw507600/innisfree/assets/145305173/6cdab144-90e8-42ca-accc-3d681ef3ce2f)
+
+
+- - -
+### - <a id="list_6"> 토글 버튼</a>
+
+ >	클릭시 버튼이 토글 이벤트로 전환됩니다.
+
+![image](https://github.com/jkw507600/innisfree/assets/145305173/6acc1fee-f583-441c-8d08-42a88bd2ca68)
+
+  
+- - -
+
+### - <a id="list_7"> 로고 및 아이콘 링크 설정</a>
+
+ >	로고와 각 아이콘에 대한 링크를 설정하여 해당 페이지로 이동 가능하도록 합니다.
+
+![image](https://github.com/jkw507600/innisfree/assets/145305173/6e0434f2-d504-43a5-93e5-245a54b3b52c)
+
+  
+- - -
+
+### - <a id="list_8"> 스크롤 이벤트로 헤더 고정</a>
+
+ > 페이지 스크롤에 따라 헤더를 고정 또는 해제합니다.
+
+![image](https://github.com/jkw507600/innisfree/assets/145305173/92a4f98e-573c-4e98-ab91-4eac2d7b67ef)
+
+- - -
+### - <a id="list_9"> 애니메이션 효과 및 검색창 열고 닫기</a>
+
+ > 검색 아이콘 클릭 시 오른쪽에서 검색창이 열리고, 닫기 버튼 클릭 시 검색창을 닫습니다.
+
+![image](https://github.com/jkw507600/innisfree/assets/145305173/4eb7f175-1583-4116-a939-d935dedfece7)
+
 
 - - -
